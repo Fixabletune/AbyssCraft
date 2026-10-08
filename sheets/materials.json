@@ -1,0 +1,50 @@
+[
+  {
+    "id": "glass",
+    "name": "Glass",
+    "pressure_rating": 10,
+    "leak_rate": 0.5,
+    "failure_sound": "barotrauma/Hull1.ogg",
+    "verified": true
+  },
+  {
+    "id": "cobblestone",
+    "name": "Cobblestone",
+    "pressure_rating": 50,
+    "leak_rate": 0.2,
+    "failure_sound": "barotrauma/Hull2.ogg",
+    "verified": true
+  },
+  {
+    "id": "iron_block",
+    "name": "Iron Block",
+    "pressure_rating": 200,
+    "leak_rate": 0.05,
+    "failure_sound": "barotrauma/HullLong1.ogg",
+    "verified": true
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "pressure_rating": 1000,
+    "leak_rate": 0.0,
+    "failure_sound": "barotrauma/HullLong2.ogg",
+    "verified": true
+  },
+  {
+    "id": "deepslate_tiles",
+    "name": "Deepslate Tiles",
+    "pressure_rating": 400,
+    "leak_rate": 0.02,
+    "failure_sound": "barotrauma/Hull3.ogg",
+    "verified": true
+  },
+  {
+    "id": "netherite_block",
+    "name": "Netherite Block",
+    "pressure_rating": 5000,
+    "leak_rate": 0.0,
+    "failure_sound": "barotrauma/Hull4.ogg",
+    "verified": true
+  }
+]

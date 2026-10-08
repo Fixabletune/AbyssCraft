@@ -1,0 +1,16 @@
+[
+  {
+    "trigger": "pressure_exceeded",
+    "effect": "crack",
+    "chance": 0.1,
+    "result": "leak_start",
+    "verified": false
+  },
+  {
+    "trigger": "leak_start",
+    "effect": "flood",
+    "rate_multiplier": 1.5,
+    "result": "room_flooded",
+    "verified": false
+  }
+]
