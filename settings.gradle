@@ -1,0 +1,36 @@
+pluginManagement {
+    repositories {
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'AbyssCraft'
+
+Step 2: Update build.gradle
+
+Now, replace the contents of your build.gradle with this version (I've updated the Loom version to a stable one to avoid "SNAPSHOT" issues):
+
+plugins {
+    id 'fabric-loom' version '1.7-RELEASE'
+}
+
+version = '0.1.0'
+group = 'com.abysscraft'
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.21.1"
+    mappings "net.fabricmc:yarn:1.21.1+build.1:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.15.11"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.100.0+1.21.1"
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
